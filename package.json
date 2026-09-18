@@ -1,0 +1,54 @@
+{
+  "name": "user_microservice",
+  "version": "1.0.0",
+  "description": "A microservice for user related operations in the tares game platform ",
+  "keywords": [
+    "User",
+    "Auth",
+    "Sercurity",
+    "Isolation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "github.com/logic-gate-sys/tares_cli"
+  },
+  "license": "ISC",
+  "author": "Logic Gate",
+  "type": "module",
+  "main": "src/app.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "dev": "NODE_ENV=development node --watch src/app.ts",
+    "lint": "eslint --fix"
+  },
+  "imports": {
+    "#loaders/*": "./src/loaders/*.ts",
+    "#controllers/*": "./src/controllers/*.ts",
+    "#models/*": "./src/models/*.ts",
+    "#schemas/*": "./src/schemas/*.ts",
+    "#services/*":"./src/services/*.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tsconfig/node24": "^24.0.5",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^26.6.1",
+    "@types/pg": "^8.23.1",
+    "drizzle-kit": "^1.0.0-rc.4",
+    "eslint": "^10.10.0",
+    "globals": "^17.12.0",
+    "typescript-eslint": "^8.70.0"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.2.0",
+    "custom-env": "^2.0.6",
+    "dotenv": "^18.0.0",
+    "drizzle-orm": "^1.0.0-rc.4",
+    "express": "^5.2.1",
+    "jiti": "^2.7.0",
+    "multer": "^2.4.0",
+    "pg": "^8.23.0",
+    "zod": "^4.6.5"
+  }
+}
