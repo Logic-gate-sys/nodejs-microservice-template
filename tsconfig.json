@@ -10,6 +10,8 @@
     "module": "nodenext",
     "target": "esnext",
     "types": ["node"],
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
     "paths": {
       "#loaders/*": ["./src/loaders/*"],
       "#controllers/*": ["./src/controllers/*"],
